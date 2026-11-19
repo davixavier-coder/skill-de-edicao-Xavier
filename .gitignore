@@ -1,0 +1,6 @@
+ambiente/
+modelos/*.onnx
+sons/*.wav
+motor/Inter.woff2
+__pycache__/
+.DS_Store

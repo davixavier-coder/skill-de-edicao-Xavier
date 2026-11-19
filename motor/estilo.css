@@ -1,0 +1,82 @@
+/* Edição Xavier: só Inter, quadro 1920x1080 */
+@font-face{font-family:"InterLocal";src:url("assets/Inter.woff2") format("woff2");font-weight:100 900}
+:root{--g:#3EE58F;--o:#FF7A3D;--y:#ffd23f}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000;font-family:"InterLocal","Inter",sans-serif;color:#fff}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;background:#000}
+
+/* câmera: camT segue o rosto, camP dá os socos de zoom, camFx desfoca */
+#camBox{position:absolute;inset:0;z-index:1}
+#camFx{position:absolute;inset:0;transform-origin:960px 540px;will-change:transform,filter}
+#camP{position:absolute;inset:0;transform-origin:960px 500px}
+#camT{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+#cam{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover}
+
+/* telas cheias: o quadro inteiro, sem moldura boiando em fundo claro */
+.fs{position:absolute;inset:0;z-index:20;overflow:hidden;opacity:0;display:none}
+.fsin{position:absolute;inset:0}
+.bgA{background:radial-gradient(ellipse at 50% 40%,#1b2230 0%,#0b0e14 60%,#050608 100%)}
+.bgB{background:radial-gradient(ellipse at 30% 30%,#2a1636 0%,#100916 60%,#050307 100%)}
+.bgC{background:radial-gradient(ellipse at 70% 30%,#0f2a24 0%,#07120f 60%,#030605 100%)}
+.bgA::after,.bgB::after,.bgC::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 300px rgba(0,0,0,.8);pointer-events:none}
+.vcheio{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* site real numa janela de navegador (ocupa quase o quadro todo) */
+.nav{position:absolute;left:100px;top:40px;width:1720px;height:1000px;border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+.navbar{height:58px;background:#202124;display:flex;align-items:center;gap:10px;padding:0 22px}
+.navbar i{width:15px;height:15px;border-radius:50%;background:#5f6368}
+.navbar i:nth-child(1){background:#ff5f57}.navbar i:nth-child(2){background:#febc2e}.navbar i:nth-child(3){background:#28c840}
+.url{margin-left:22px;flex:1;height:36px;border-radius:18px;background:#35363a;color:#e8eaed;font-size:20px;line-height:36px;padding:0 20px;font-weight:500}
+.navvp{position:absolute;top:58px;left:0;right:0;bottom:0;overflow:hidden}
+.navvp img{display:block;transform-origin:50% 0}
+
+/* print/foto em tela cheia: fundo desfocado dele mesmo + a imagem inteira */
+.imbg{position:absolute;inset:-60px;width:calc(100% + 120px);height:calc(100% + 120px);object-fit:cover;filter:blur(40px) brightness(.45)}
+.imfg{position:absolute;inset:40px;width:calc(100% - 80px);height:calc(100% - 80px);filter:drop-shadow(0 30px 80px rgba(0,0,0,.6))}
+
+/* destaque, cursor, borrão */
+.anel{position:absolute;z-index:40;display:none;border:6px solid var(--y);border-radius:18px;box-shadow:0 0 30px rgba(255,210,63,.55)}
+.cursor{position:absolute;left:0;top:0;z-index:45;display:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
+.borra{position:absolute;z-index:41;display:none;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);background:rgba(120,120,120,.15);border-radius:10px}
+
+/* material ao lado do rosto */
+.ov{position:absolute;z-index:15;pointer-events:none;display:none}
+.shot{max-width:800px;max-height:900px;border-radius:24px;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+
+/* texto grande em degradê */
+.bw{position:absolute;z-index:16;pointer-events:none;display:none;flex-direction:column;justify-content:center}
+.bwbg{position:absolute;left:50%;top:50%;width:1300px;height:520px;transform:translate(-50%,-50%);background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.55) 0%,rgba(0,0,0,.28) 45%,transparent 70%);z-index:-1}
+.bws{font-weight:700;font-size:40px;color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.8);margin-bottom:6px}
+.bwb{font-weight:900;letter-spacing:-.035em;line-height:.95;text-transform:uppercase}
+.gG{background:linear-gradient(180deg,#F2FFF8 0%,#7DF5B6 40%,#3EE58F 62%,#13B470 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(62,229,143,.45))}
+.gO{background:linear-gradient(180deg,#FFF1E6 0%,#FFB37A 38%,#FF7A3D 65%,#E6402B 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(255,110,60,.45))}
+.gW{background:linear-gradient(180deg,#FFFFFF 0%,#E8F2EC 55%,#A9BDB2 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 22px rgba(0,0,0,.5))}
+.gB{background:linear-gradient(180deg,#F0F7FF 0%,#9CC8FF 40%,#4D8DFF 65%,#2A55D9 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(77,141,255,.45))}
+.gR{background:linear-gradient(180deg,#FFF0F0 0%,#FF9C9C 40%,#FF4D4D 65%,#C81E1E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 26px rgba(255,77,77,.45))}
+
+/* pergunta imaginária: minúscula, casual */
+.perg{position:absolute;z-index:17;display:none;text-align:center;font-weight:400;font-size:46px;color:#fff;opacity:.95;text-shadow:0 3px 16px rgba(0,0,0,.85);font-style:italic}
+
+/* lista borrada do gancho */
+.lb{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding-left:260px;gap:26px}
+.lbt{font-weight:900;font-size:84px;text-transform:uppercase;margin-bottom:20px}
+.lbi{display:flex;align-items:center;gap:30px;font-size:62px;font-weight:800}
+.lbi b{width:92px;height:92px;border-radius:24px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:52px}
+.lbi span{filter:blur(18px);opacity:.9}
+
+/* capítulo */
+.cap{position:absolute;inset:0;z-index:18;display:none;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.capn{font-weight:900;font-size:260px;line-height:.9;letter-spacing:-.04em}
+.capt{font-weight:900;font-size:78px;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(0,0,0,.7)}
+
+/* logos em cascata */
+.lgs{position:absolute;inset:0;z-index:18;display:none;align-items:center;justify-content:center;gap:40px}
+.lgc{width:200px;height:200px;border-radius:46px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.lgc img{max-width:130px;max-height:130px}
+
+/* legenda curta palavra por palavra */
+.sl{display:none;position:absolute;left:0;right:0;z-index:16;text-align:center;font-weight:700;font-size:44px;text-shadow:0 3px 18px rgba(0,0,0,.85)}
+.slw{margin:0 4px}
+.slw.hl{color:var(--g)}
+
+.vig{position:absolute;inset:0;z-index:60;pointer-events:none;box-shadow:inset 0 0 220px rgba(0,0,0,.45)}
