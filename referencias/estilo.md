@@ -97,3 +97,15 @@ mais dinâmico ou mais parado?".
 - Em cena de lista ou prompt, aviso pequeno no canto: "todo o prompt e material está na descrição".
 - Meta: simples a ponto de "uma criança e um idoso entenderem".
 - Em vídeo tutorial, entregar junto um guia grátis com todos os prompts e passos.
+
+### 22/11 — mesmo vídeo, prévia 2 reprovada
+"Você trocou os traços e blocos por notícias… meu público é brasileiro, não gringo, eles não vão entender."
+- **Vídeo tutorial: NUNCA documentação, notícia ou site em inglês** pra parecer premium. Só em tipo de vídeo específico, e
+  nunca em inglês. No lugar: animação dinâmica que explique, ou a gravação real do criador.
+- **Blocos e traços podem voltar** (corrige a regra anterior), desde que bem feitos, no tema da ferramenta e sem o bug: o
+  traço não aparece antes do bloco e não se redesenha toda vez que o próximo bloco entra. Cada traço desenha uma vez só.
+- **Nada de print flutuando com o resto borrado em volta.** Tela cheia, com traço ou anel marcando o que é dito.
+- **Zoom sincronizado e lento:** poucos zooms, cada um na palavra ou no clique certo. Rápido demais dessincroniza.
+- **Texto grande:** no centro. A cada 2 no centro, 1 na lateral, e aí a câmera aproxima e leva o rosto pro lado oposto.
+- **Quando nomeia algo** ("isso aqui é o Claude Code"), mostrar a gravação do próprio criador daquilo, nunca página de
+  download ou de produto.
