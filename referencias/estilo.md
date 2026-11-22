@@ -76,3 +76,24 @@ mais dinâmico ou mais parado?".
 ## Regras novas
 
 (Escreva aqui cada aprovação ou reprovação nova, com a data e a frase da pessoa.)
+
+### 22/11 — vídeo tutorial (agente de IA no Claude Code), prévia 1 reprovada
+"A edição peca tanto que dá vontade de sair." O que virou regra:
+- **Nada de blocos ligados por linhas/tracinhos** (fluxograma, árvore, cartões com setas): "fica uma merda… tudo bugado". Só
+  se combinar de verdade com a cena e for muito bem feito.
+- **Nada de tela inventada pelo editor** (cartões claros com listas, colunas coloridas, relógio, "quem faz o trabalho"): é AI
+  slop. No lugar, material **oficial**: documentação oficial da empresa da ferramenta, site oficial, logo e ícone oficiais,
+  gravação real do criador. "Se precisar de algo, que seja oficial, SEMPRE oficial."
+- **"Esse vídeo está sendo editado por IA" nunca vira terminal com código.** Terminal mal feito, nunca.
+- **Caixa de prompt animada igual à oficial** do app (logo, nome em cima, caixa com "+", microfone, botão de enviar e a linha
+  de baixo com pasta, modelo e modo). Pode ser tema claro.
+- **Rosto sempre centralizado.** Nada de enquadramento que joga o rosto pra esquerda ou direita; variar só o zoom.
+- **Zoom exatamente no clique** ("Open folder", "Trust workspace"…). Conferir o quadro antes de renderizar.
+- **Blur só no que é preciso** (ex.: os chats da barra lateral). Não borrar o nome do criador nem o resto da tela.
+- **Texto grande:** acento não pode cortar (Ê, É). Alternar a posição: centro, à esquerda da cabeça, à direita da cabeça.
+- **Nada de caixa escura grande por cima do criador** (ex.: chamada da consultoria): pequena e no canto.
+- **Print bem encaixado:** página inteira e centralizada, nunca cortada no meio.
+- Quando a fala nomeia algo ("isso aqui é o Claude Code"), a representação oficial aparece na hora.
+- Em cena de lista ou prompt, aviso pequeno no canto: "todo o prompt e material está na descrição".
+- Meta: simples a ponto de "uma criança e um idoso entenderem".
+- Em vídeo tutorial, entregar junto um guia grátis com todos os prompts e passos.
