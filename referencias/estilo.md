@@ -109,3 +109,36 @@ mais dinâmico ou mais parado?".
 - **Texto grande:** no centro. A cada 2 no centro, 1 na lateral, e aí a câmera aproxima e leva o rosto pro lado oposto.
 - **Quando nomeia algo** ("isso aqui é o Claude Code"), mostrar a gravação do próprio criador daquilo, nunca página de
   download ou de produto.
+
+### 22/11 — mesmo vídeo, prévia 3 APROVADA ("vídeo perfeito")
+- Rosto no quadradinho (PiP) no canto em TODA tela e animação. O rosto nunca some.
+- Alternar mundos visuais: pixel art (mascote laranja), fundo escuro quente com número gigante em degradê, tela real cheia,
+  print real, texto grande sobre o rosto. Nunca o mesmo molde (fundo bege + cartão branco + logo + textinho) cena após cena.
+- Nunca mais o efeito "faixa colada" (carimbo inclinado atravessando a tela).
+
+### 23/11 — vídeo de shorts 3D, 0–1:30 reprovado 2x ("tá todo AI slop")
+- Nada de boneco 3D da pessoa nem cartão de nome com @ e selo.
+- Poucas pílulas/badges (diminuir, não trocar por texto gigante). Tela bege em tudo = "vibecodado".
+- Texto entra NA palavra, nunca antes. Mesma transição repetida = proibido.
+- Nada de desfoque em volta de vídeo em pé; o quadradinho nunca por cima de vídeo em pé.
+- Quando a pessoa cita um fato com cena, muda de cena (não basta uma badge na mesma tela).
+- Texto do lado do rosto: linha pequena BRANCA em cima, linha grande laranja embaixo (aprovado).
+
+### 25/11 — vídeo "Top 1%": prévia 1 reprovada, prévia 2 APROVADA
+- Reprovado: edição monótona preto/branco/cinza ("que merda de desânimo"), começo sem material real, zoom gigante no rosto
+  pra caber texto, pausa depois da 1ª frase.
+- Aprovado: material real no 1º segundo, fundo quente (marrom/laranja ou creme) com quadriculado ANDANDO, lista borrada
+  "O QUE VEM NESSE VÍDEO", logos oficiais, algo novo a cada 2–3 s do início ao FIM, cena nova em todo trecho longo de rosto.
+
+### 26/11 — vídeo de lançamento (apps do Claude), prévia 1 APROVADA de primeira ("tá perfeito, vou postar assim mesmo")
+O que os vídeos que mais bombaram do canal têm (assistidos quadro a quadro) e que essa edição repetiu:
+- Primeiros ~15 s SEM rosto, troca a cada 1,5–2,5 s, abrindo na coisa mais visual do vídeo (a gravação real da pessoa usando).
+- Fato + número sobre material REAL: o post oficial do lançamento com o vídeo tocando DENTRO do post e as views grifadas,
+  com legenda curta em português embaixo (o post fica em inglês, a ideia chega em português).
+- Vídeo oficial da empresa onde a pessoa não tem gravação (o pedido, o menu, o app indo pro Dock).
+- Janelas reais dos apps lado a lado com o último BORRADO e "?" (curiosidade, sem entregar).
+- Capítulos "PARTE 0X" no escuro quente com a linha de progresso; cada parte num mundo visual diferente.
+- Animação feita por nós só onde não existe gravação (ex.: o mascote animado POR CIMA de um quadro real da tela dela,
+  no mesmo tamanho e estilo do app de verdade), nunca uma tela inventada no lugar da real.
+- Telas finais reais: o guia grátis, a ferramenta grátis e a página de agendamento real, com zoom e anel no que é dito.
+- Cortar na decupagem: frase repetida 2–3 vezes e numeração falada errada ("Parte 3" duas vezes → cortar uma).
